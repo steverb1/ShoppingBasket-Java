@@ -7,6 +7,9 @@ import org.junit.jupiter.api.Test;
 public class ShoppingBasketTest {
 	@Test
 	public void test1() {
-		assertTrue(true);
+		Item item1 = new Item(1, 1);
+		
+		ShoppingBasket basket = new ShoppingBasket();
+		basket.add(item1);
 	}
 }
