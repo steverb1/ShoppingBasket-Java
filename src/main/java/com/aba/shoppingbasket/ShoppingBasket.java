@@ -6,14 +6,14 @@ import java.util.Map;
 
 public class ShoppingBasket {
 
-    private final Map<String, Integer> contents = new HashMap<>();
+    private final Map<Type, Integer> contents = new HashMap<>();
 
-    public void add(String type) {
+    public void add(Type type) {
         int currentCount = contents.get(type) != null ? contents.get(type) : 0;
 		contents.put(type, currentCount + 1);
     }
 
-    public int howMany(String type) {
+    public int howMany(Type type) {
         return contents.get(type);
     }
 }

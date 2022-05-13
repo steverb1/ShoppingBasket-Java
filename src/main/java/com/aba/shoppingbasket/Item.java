@@ -2,13 +2,14 @@ package com.aba.shoppingbasket;
 
 public class Item {
 
-	private String type;
+	private Type type;
 
 	public Item(int i, int j) {
 		Integer x = i;
 	}
 
-	public Item(String type) {
+	public Item(Type type){
 		this.type = type;
 	}
+
 }
